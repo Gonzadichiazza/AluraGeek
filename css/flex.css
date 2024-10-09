@@ -1,0 +1,53 @@
+
+/*MENU*/
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    top: -100%;
+    align-items: center;
+    height: calc(100vh - 150px);
+    
+    
+
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .lista{
+    
+    top: 120px;
+}
+
+
+/*VIDEOS*/
+
+
+.videos__video--next{
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    top: 450px;
+    right: 50px;
+}
+
+.videos__video--prev{
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    top: 450px;
+    left: 50px;
+}
