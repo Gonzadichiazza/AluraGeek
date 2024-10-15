@@ -36,19 +36,59 @@ header{
 
 /*VIDEOS*/
 
-.videos__video{
-    display: flex;
-    position: absolute;
-    top:120px;
-    width: 100vw;
-    height: calc(100vh - 120px);
-    object-fit: cover;
+
+.botones{
+    background-color: #cfca92b0;
+    padding: 20px;
+}
+
+.botones:hover, .botones:active{
+    background-color: #cfca92;
+}
+
+.videos__seccion__presentacion{
+    /* pantalla grande
+    font-size: 1.9rem;
+    */
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.videos__seccion__presentacion__titulo{
+
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/*Cards*/
+.productos{
     
 }
 
-.videos__video--next{
-    
+
+
+@media (min-width: 1080px) {
+    .lista{
+        background-color: #fff;
+        width: auto;
+        gap: 55px;
+    }
+
+    .linea{
+        
+        border-bottom: none;
+    }
+
+    .lista__item a{
+        font-size: 20px;
+        white-space: nowrap;
+        color: #6f6c49;
+    }
+
+    .lista__item a:hover{
+        font-size: 24px;
+
+    }
+
 }
-
-
-

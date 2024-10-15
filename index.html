@@ -18,7 +18,7 @@
         <img src="/assets/del_campo-removebg-preview.png" class="menu__img" alt="Logotipo empresa">
       </a>
 
-      <input type="checkbox" id="check">
+      <input type="checkbox" id="check">     
       <label for="check" class="menu__telefono">
         <i class="fa-solid fa-bars fa-flip-horizontal fa-2xl menu__telefono__icono" style="color: #6F6C49;"></i>
       </label>
@@ -33,13 +33,78 @@
     
     </header>
     <main>
-        <section>
+        <section class="video">
           <div class="videos">
-            <video class="videos__video" src="/assets/10838611-hd_3840_2160_30fps.mp4" autoplay loop></video>
+            <article class="videos__seccion">
+              <video class="videos__seccion__video" src="/assets/10838611-hd_3840_2160_30fps.mp4" autoplay loop muted playsinline></video>
+              <div class="videos__seccion__presentacion">
+                <h2 class="videos__seccion__presentacion__titulo">Nuestros productos</h2>
+                <p class="videos__seccion__presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Laboriosam saepe corporis nostrum, dolor esse aliquid et nulla, quaerat perferendis recusandae quas ad nobis nam culpa. Fugiat a error expedita fugit?</p>
+              </div>
+            </article>
+            <article class="videos__seccion">
+              <video class="videos__seccion__video" src="/assets/179207-861403607_small.mp4" autoplay loop muted playsinline></video>
+              <div class="videos__seccion__presentacion">
+                <h2 class="videos__seccion__presentacion__titulo">Contactanos</h2>
+                <p class="videos__seccion__presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Laboriosam saepe corporis nostrum, dolor esse aliquid et nulla, quaerat perferendis recusandae quas ad nobis nam culpa. Fugiat a error expedita fugit?</p>
+              </div>
+            </article>
+            <article class="videos__seccion">
+              <video class="videos__seccion__video" src="/assets/3769204-hd_1920_1080_25fps.mp4" autoplay loop muted playsinline></video>
+              <div class="videos__seccion__presentacion">
+                <h2 class="videos__seccion__presentacion__titulo">Trabaja con nosotros</h2>
+                <p class="videos__seccion__presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Laboriosam saepe corporis nostrum, dolor esse aliquid et nulla, quaerat perferendis recusandae quas ad nobis nam culpa. Fugiat a error expedita fugit?</p>
+              </div>
+            </article>
+            <article class="videos__seccion">
+              <video class="videos__seccion__video" src="/assets/3769204-hd_1920_1080_25fps.mp4" autoplay loop muted playsinline></video>
+              <div class="videos__seccion__presentacion">
+                <h2 class="videos__seccion__presentacion__titulo">Trabaja con nosotros</h2>
+                <p class="videos__seccion__presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Laboriosam saepe corporis nostrum, dolor esse aliquid et nulla, quaerat perferendis recusandae quas ad nobis nam culpa. Fugiat a error expedita fugit?</p>
+              </div>
+            </article>
           </div>
-            <button class="videos__video--next"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i></button>
-            <button class="videos__video--prev"><i class="fa-solid fa-arrow-right fa-flip-horizontal fa-2xl" style="color: #ffffff;"></i></button>
+          
+            <button id="right" class="botones videos__video--next"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i></button>
+            <button id="left" class="botones videos__video--prev"><i class="fa-solid fa-arrow-right fa-flip-horizontal fa-2xl" style="color: #ffffff;"></i></button>
+          
         </section>
+        <section class="productos">
+            <h2 class="productos__titulo">Nuestros Productos</h2>
+
+              <article class="productos__card">
+                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
+                <div class="productos__card__header">
+                  <h2 class="producto__card__titulo">Chorizos</h2>
+                  <h3 class="producto__card__precio">$1500</h3>
+                </div>
+              </article>
+              <article class="productos__card">
+                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
+                <div class="productos__card__header">
+                  <h2 class="producto__card__titulo">Chorizos</h2>
+                  <h3 class="producto__card__precio">$1500</h3>
+                </div>
+              </article>
+              <article class="productos__card">
+                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
+                <div class="productos__card__header">
+                  <h2 class="producto__card__titulo">Chorizos</h2>
+                  <h3 class="producto__card__precio">$1500</h3>
+                </div>
+              </article>
+              <article class="productos__card">
+                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
+                <div class="productos__card__header">
+                  <h2 class="producto__card__titulo">Chorizos</h2>
+                  <h3 class="producto__card__precio">$1500</h3>
+                </div>
+              </article>
+            </section>
 
     </main>
     <footer></footer>
