@@ -31,7 +31,7 @@ async function crearArticulo(nombre, precio, imagen){
         body:JSON.stringify({
             nombre: nombre, 
             precio:precio, 
-            imagen: imagen,
+            imagen: `./assets/${imagen}`,
             activo: true
         })
     }
@@ -46,7 +46,26 @@ async function crearArticulo(nombre, precio, imagen){
     
 }
 
+async function editarProductos(id, nombre, precio, imagen){
+    try {
+        const conexion = await fetch(`http://localhost:3001/articulos/${id}`, {
+            method: "PUT", 
+            headers: {"Content-type":"application/json"},
+            body: JSON.stringify({
+                nombre: nombre, 
+                precio: precio, 
+                imagen: `./assets/${imagen}`
+            })
+        })
+        const conexionConvertida = await conexion.json(); 
+    
+        return conexionConvertida
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 
 export const conexion ={
-    crearArticulo, eliminarArticulo, productos
+    crearArticulo, eliminarArticulo, productos, editarProductos
 }

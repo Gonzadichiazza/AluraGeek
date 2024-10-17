@@ -51,3 +51,10 @@ videos.addEventListener("mousedown", dragStart);
 videos.addEventListener("mousemove", dragging);
 videos.addEventListener("mouseup", dragStop);
 
+
+document.querySelector("[data-lista]").addEventListener("click", evento => {
+    if(evento.target.matches("[data-editar")){
+         const id = evento.target.getAttribute("data-id");
+         window.location.href = `./pages/editarProducto.html?id=${id}`
+    }
+})
