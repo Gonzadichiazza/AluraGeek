@@ -1,3 +1,27 @@
+async function productos () {
+    const conexion = await fetch("http://localhost:3001/articulos"); 
+    const conexionConvertida = await conexion.json(); 
+    return conexionConvertida; 
+}
+
+async function eliminarArticulo(id) {
+    try {
+        const conexion = await fetch(`http://localhost:3001/articulos/${id}`, {
+            method: "DELETE",
+            headers: {"Content-Type": "application/json"}
+        });
+        if (!conexion.ok) {
+            throw new Error('Error eliminando el artículo');
+        }
+        const conexionConvertida = await conexion.json();
+        return conexionConvertida;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+
 async function crearArticulo(nombre, precio, imagen){
     try {
         const conexion = await fetch("http://localhost:3001/articulos",
@@ -7,7 +31,8 @@ async function crearArticulo(nombre, precio, imagen){
         body:JSON.stringify({
             nombre: nombre, 
             precio:precio, 
-            imagen: imagen
+            imagen: imagen,
+            activo: true
         })
     }
     )
@@ -21,6 +46,7 @@ async function crearArticulo(nombre, precio, imagen){
     
 }
 
+
 export const conexion ={
-    crearArticulo
+    crearArticulo, eliminarArticulo, productos
 }

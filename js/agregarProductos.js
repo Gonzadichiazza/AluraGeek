@@ -1,7 +1,6 @@
 import { conexion } from "./conexion.js";
 
 const volver = document.querySelector(".volver");
-console.log(volver);
 const formulario = document.querySelector("[data-formulario]");
 async function agregar (e) {
 

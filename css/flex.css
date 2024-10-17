@@ -173,6 +173,22 @@ video{
     color: #fff;
 }
 
+.productos__modificadores{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    top: 20px;
+    gap: 2rem;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 @media (min-width: 700px){
     .productos__card{
         width: 40%;

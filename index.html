@@ -67,7 +67,25 @@
         </section>
         <section id="productos" class="productos">
             <h2 class="productos__titulo">Nuestros Productos</h2>
-            <div class="contenedor__productos" data-lista></div>
+            <div class="contenedor__productos" data-lista>
+             <article class="productos__card" data-id="1">
+                <div class="productos__modificadores">
+                  <i class="fa-solid fa-pen-to-square fa-2xl productos__card__eliminar" style="color: #FFD43B;" data-editar data-id="1"></i>
+                  <i class="fa-solid fa-circle-xmark fa-2xl productos__card__eliminar" style="color:  #920707;" data-eliminar data-id="1"></i>           
+                </div>
+
+                <img src="/assets/images.jpeg" alt="imagen" class="productos__card__img">
+
+                <div class="productos__card__header">
+                  <h2 class="producto__card__titulo">Chorizos</h2>
+                  <h3 class="producto__card__precio">$1600</h3>
+                </div>
+
+                  
+              </article>
+
+             
+            </div>
             </section>
 
     </main>
@@ -75,5 +93,7 @@
     <script src="https://kit.fontawesome.com/3fd9c49f06.js" crossorigin="anonymous"></script>
     <script src="/js/mostrarProductos.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/eliminarProductos.js" type="module"></script>
+    <script src="/js/conexion.js" type="module"></script>
   </body>
 </html>

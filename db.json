@@ -4,31 +4,29 @@
       "id": "1",
       "nombre": "Chorizo",
       "precio": 1500,
-      "imagen": "./assets/images.jpeg"
-    },
-    {
-      "id": "2",
-      "nombre": "Bondiola",
-      "precio": 1900,
-      "imagen": "./assets/images (1).jpeg"
+      "imagen": "./assets/images.jpeg",
+      "activo": true
     },
     {
       "id": "3",
       "nombre": "Salame",
       "precio": 1400,
-      "imagen": "./assets/salame.jpg"
+      "imagen": "./assets/salame.jpg",
+      "activo": true
     },
     {
       "id": "4",
       "nombre": "Hmburguesas",
       "precio": 1800,
-      "imagen": "./assets/hamburguesa.jpg"
+      "imagen": "./assets/hamburguesa.jpg",
+      "activo": true
     },
     {
-      "id": "8ead",
+      "id": "fb6a",
       "nombre": "Asado",
       "precio": "15000",
-      "imagen": "./assets/1010x567_asado-481813-144139.jpg"
+      "imagen": "./assets/1010x567_asado-481813-144139.jpg",
+      "activo": true
     }
   ]
 }
