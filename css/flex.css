@@ -1,5 +1,7 @@
 
 /*MENU*/
+
+
 .menu{
     display: flex;
     justify-content: space-around;
@@ -8,7 +10,10 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
+    
 }
+
+
 
 .lista{
     display: flex;
@@ -18,6 +23,7 @@
     top: -100%;
     align-items: center;
     height: calc(100vh - 150px);
+    
     
     
 
@@ -93,6 +99,17 @@ video{
 }
 
 /*Cards*/
+.contenedor__productos{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+
 .productos{
     background-color: #fff;
     display: flex;
@@ -100,7 +117,6 @@ video{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    white-space: no;
     
 }
 
@@ -122,7 +138,7 @@ video{
     text-align: center;
     width: 80%;
     height: auto;
-    border: 2px solid #6f6c49;
+    border: 5px solid #cfca92;
     border-radius: 10%;
     overflow: hidden;
 }
@@ -138,19 +154,37 @@ video{
 }
 
 .productos__card__img{
-    width: 100%
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
 }
 
 .producto__card__titulo{
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #fff;
+    width: 50%;
+    text-align: center;
 }
 
 .producto__card__precio{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
+}
+
+@media (min-width: 700px){
+    .productos__card{
+        width: 40%;
+    }
+
+    .videos__seccion__presentacion__titulo{
+        font-size: 2.5rem;
+    }
+
+    .videos__seccion__presentacion__parrafo{
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 1080px) {
@@ -161,6 +195,8 @@ video{
         justify-content: space-between;
         
     }
+
+   
 
     .menu__telefono{
         display: none;
@@ -189,7 +225,7 @@ video{
     }
 
     .videos__seccion__presentacion{
-        transform: translateY(-30rem);
+        transform: translateY(-35rem);
     }
 
     .videos__seccion__presentacion__titulo{
@@ -197,7 +233,7 @@ video{
     }
 
     .videos__seccion__presentacion__parrafo{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
 
@@ -206,3 +242,5 @@ video{
         width: 20%;
     }
 }
+
+

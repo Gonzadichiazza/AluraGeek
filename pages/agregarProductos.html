@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/agregarProductos.css">
+    <title>Agregar Productos</title>
+</head>
+<body>
+    <header class="menu">
+        <img class="menu__img"src="../assets/del_campo-removebg-preview.png" alt="logo de la empresa">
+    </header>
+    <main class="principal">
+        <h2 class="formulario__presentacion__titulo">Carga tu producto</h2>
+        <form class="formulario" data-formulario>
+            <div class="formulario__inputs">
+                <label class="formulario__inputs__label" for="nombre">Ingresar el nombre del producto</label>
+                <input class="formulario__inputs__input" id="nombre"type="text" name="nombre" data-nombre placeholder="Ej: Chorizo">
+                <p class="formulario__inputs__error" hidden data-errorNombre></p>
+            </div>
+            <div class="formulario__inputs">
+                <label class="formulario__inputs__label" for="nombre">Ingresar el precio del producto</label>
+                <input class="formulario__inputs__input" id="precio"type="text" name="precio" data-precio placeholder="Ej: 2000">
+                <p class="formulario__inputs__error" hidden data-errorPrecio>Debes ingresar un valor numerico</p>
+            </div>
+            <div class="formulario__inputs">
+                <label class="formulario__inputs__label" for="nombre">Ingresar una imagen del producto</label>
+                <input class="formulario__inputs__input" id="imagen"type="file" accept="image/*" name="imagen" data-imagen>
+                <p class="formulario__inputs__error" hidden data-errorImagen></p>
+            </div>
+            <div class="principal__botones">
+                <input class="principal__botones__boton" type="submit" value="Enviar">
+                <input class="principal__botones__boton volver" type="button" value="Volver">
+            </div>
+        </form>
+    </main>
+    <script src="/js/agregarProductos.js" type="module"></script>
+    <script src="/js/conexion.js" type="module"></script>
+</body>
+</html>

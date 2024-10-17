@@ -24,10 +24,10 @@
       </label>
 
       <ul class="lista">
-        <li class="lista__item linea"><a href="">Nuestros productos</a></li>
+        <li class="lista__item linea"><a href="#productos">Nuestros productos</a></li>
         <li class="lista__item linea"><a href="">Sobre nosotros</a></li>
         <li class="lista__item linea"><a href="">Contactanos</a></li>
-        <li class="lista__item linea"><a href="">Agregar productos</a></li>
+        <li class="lista__item linea"><a href="/pages/agregarProductos.html">Agregar productos</a></li>
       </ul>
 
     
@@ -39,32 +39,24 @@
               <video class="videos__seccion__video" src="/assets/10838611-hd_3840_2160_30fps.mp4" autoplay loop muted playsinline></video>
               <div class="videos__seccion__presentacion">
                 <h2 class="videos__seccion__presentacion__titulo">Nuestros productos</h2>
-                <p class="videos__seccion__presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Laboriosam saepe corporis nostrum, dolor esse aliquid et nulla, quaerat perferendis recusandae quas ad nobis nam culpa. Fugiat a error expedita fugit?</p>
+                <p class="videos__seccion__presentacion__parrafo">En Del Campo Chacinados, estamos comprometidos a ofrecer productos chacinados de la más alta calidad. 
+                  Elaborados artesanalmente con ingredientes naturales y cuidadosamente seleccionados, nuestros chacinados son sinónimo de sabor auténtico y tradición.</p>
               </div>
             </article>
             <article class="videos__seccion">
               <video class="videos__seccion__video" src="/assets/179207-861403607_small.mp4" autoplay loop muted playsinline></video>
               <div class="videos__seccion__presentacion">
-                <h2 class="videos__seccion__presentacion__titulo">Contactanos</h2>
-                <p class="videos__seccion__presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Laboriosam saepe corporis nostrum, dolor esse aliquid et nulla, quaerat perferendis recusandae quas ad nobis nam culpa. Fugiat a error expedita fugit?</p>
+                <h2 class="videos__seccion__presentacion__titulo">Calidad Superior</h2>
+                <p class="videos__seccion__presentacion__parrafo">Nuestros productos son el resultado de una combinación perfecta entre tradición y innovación. 
+                  Utilizamos las mejores materias primas y seguimos procesos estrictos de calidad para garantizar que cada bocado sea una experiencia inolvidable.</p>
               </div>
             </article>
             <article class="videos__seccion">
               <video class="videos__seccion__video" src="/assets/3769204-hd_1920_1080_25fps.mp4" autoplay loop muted playsinline></video>
               <div class="videos__seccion__presentacion">
-                <h2 class="videos__seccion__presentacion__titulo">Trabaja con nosotros</h2>
-                <p class="videos__seccion__presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Laboriosam saepe corporis nostrum, dolor esse aliquid et nulla, quaerat perferendis recusandae quas ad nobis nam culpa. Fugiat a error expedita fugit?</p>
-              </div>
-            </article>
-            <article class="videos__seccion">
-              <video class="videos__seccion__video" src="/assets/3769204-hd_1920_1080_25fps.mp4" autoplay loop muted playsinline></video>
-              <div class="videos__seccion__presentacion">
-                <h2 class="videos__seccion__presentacion__titulo">Trabaja con nosotros</h2>
-                <p class="videos__seccion__presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Laboriosam saepe corporis nostrum, dolor esse aliquid et nulla, quaerat perferendis recusandae quas ad nobis nam culpa. Fugiat a error expedita fugit?</p>
+                <h2 class="videos__seccion__presentacion__titulo">Variedad y sabor</h2>
+                <p class="videos__seccion__presentacion__parrafo">Desde chorizos y salame, hasta hamburguesas y lomos embuchados, nuestra gama de productos está pensada para satisfacer todos los paladares. 
+                  Cada uno de nuestros chacinados es curado y ahumado lentamente para asegurar un sabor robusto y auténtico.</p>
               </div>
             </article>
           </div>
@@ -73,42 +65,15 @@
             <button id="left" class="botones videos__video--prev"><i class="fa-solid fa-arrow-right fa-flip-horizontal fa-2xl" style="color: #ffffff;"></i></button>
           
         </section>
-        <section class="productos">
+        <section id="productos" class="productos">
             <h2 class="productos__titulo">Nuestros Productos</h2>
-
-              <article class="productos__card">
-                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
-                <div class="productos__card__header">
-                  <h2 class="producto__card__titulo">Chorizos</h2>
-                  <h3 class="producto__card__precio">$1500</h3>
-                </div>
-              </article>
-              <article class="productos__card">
-                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
-                <div class="productos__card__header">
-                  <h2 class="producto__card__titulo">Chorizos</h2>
-                  <h3 class="producto__card__precio">$1500</h3>
-                </div>
-              </article>
-              <article class="productos__card">
-                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
-                <div class="productos__card__header">
-                  <h2 class="producto__card__titulo">Chorizos</h2>
-                  <h3 class="producto__card__precio">$1500</h3>
-                </div>
-              </article>
-              <article class="productos__card">
-                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
-                <div class="productos__card__header">
-                  <h2 class="producto__card__titulo">Chorizos</h2>
-                  <h3 class="producto__card__precio">$1500</h3>
-                </div>
-              </article>
+            <div class="contenedor__productos" data-lista></div>
             </section>
 
     </main>
     <footer></footer>
     <script src="https://kit.fontawesome.com/3fd9c49f06.js" crossorigin="anonymous"></script>
+    <script src="/js/mostrarProductos.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>
