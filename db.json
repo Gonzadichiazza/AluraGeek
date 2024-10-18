@@ -15,18 +15,16 @@
       "activo": true
     },
     {
-      "id": "4",
-      "nombre": "Hmburguesas",
-      "precio": 1800,
+      "nombre": "Hamburguesa",
+      "precio": "1995",
       "imagen": "./assets/hamburguesa.jpg",
-      "activo": true
+      "id": "4"
     },
     {
-      "id": "fb6a",
       "nombre": "Asado",
       "precio": "15000",
-      "imagen": "./assets/1010x567_asado-481813-144139.jpg",
-      "activo": true
+      "imagen": "./assets/asado.jpg",
+      "id": "f08c"
     }
   ]
 }
