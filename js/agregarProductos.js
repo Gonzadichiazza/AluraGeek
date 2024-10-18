@@ -1,10 +1,13 @@
 import { conexion } from "./conexion.js";
 
+
+
 const volver = document.querySelector(".volver");
 const formulario = document.querySelector("[data-formulario]");
 async function agregar (e) {
 
     try {
+        console.log("hola")
         e.preventDefault()
         const nombre = document.querySelector("[data-nombre]").value
         const precio = document.querySelector("[data-precio]").value
