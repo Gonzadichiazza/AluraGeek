@@ -1,6 +1,13 @@
 {
   "articulos": [
     {
+      "id": "1",
+      "nombre": "Chorizo",
+      "precio": 1500,
+      "imagen": "./assets/images.jpeg",
+      "activo": true
+    },
+    {
       "id": "3",
       "nombre": "Salame",
       "precio": 1400,
@@ -8,16 +15,18 @@
       "activo": true
     },
     {
-      "nombre": "Hamburguesa",
-      "precio": "7000",
+      "id": "4",
+      "nombre": "Hmburguesas",
+      "precio": 1800,
       "imagen": "./assets/hamburguesa.jpg",
-      "id": "4"
+      "activo": true
     },
     {
+      "id": "fb6a",
       "nombre": "Asado",
-      "precio": "7000",
-      "imagen": "./assets/asado2.jpeg",
-      "id": "fb6a"
+      "precio": "15000",
+      "imagen": "./assets/1010x567_asado-481813-144139.jpg",
+      "activo": true
     }
   ]
 }
