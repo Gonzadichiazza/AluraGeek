@@ -13,6 +13,8 @@ async function agregar (e) {
             await conexion.crearArticulo(nombre, precio, imagen); 
         
             window.location.href="../index.html"
+
+
         
     } catch (error) {
         console.log(error);
