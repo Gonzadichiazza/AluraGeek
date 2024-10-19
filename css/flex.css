@@ -1,6 +1,8 @@
+body{
+    overflow-x: hidden;
+}
 
 /*MENU*/
-
 
 .menu{
     display: flex;
@@ -23,10 +25,6 @@
     top: -100%;
     align-items: center;
     height: calc(100vh - 150px);
-    
-    
-    
-
 }
 
 #check{
@@ -80,15 +78,12 @@
 
 .videos__seccion__presentacion{
     display: flex;
-    
     flex-direction: column;
     position: relative;
     z-index: 999;
     transform: translateY(-20rem);
     left: 10%;
-
     width: 70%;
-
     gap: 50px;
     
 }
@@ -106,6 +101,7 @@ video{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin-bottom: 5rem;
     
 }
 
@@ -185,9 +181,110 @@ video{
 }
 
 
+/*NOSOTROS*/
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.nosotros__presentacion{
+    width: 100vw;
+}
+
+.nosotros__presentacion__imagen{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    object-fit:cover;
+    object-position: bottom;
+    height: 400px;
+}
+
+.nosotros__presentacion__titulo{
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000; 
+    position: relative;
+    top: 21rem;
+    justify-content: center;
+    height: 0;
+
+}
+
+.nosotros__contenedor{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 0;    
+}
 
 
+.nosotros__contenedor__descripcion{
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+    text-indent: 20px;
+    font-weight: 400;
+    color: #6f6c49;
+    
+}
 
+
+/*Contacto*/
+.contactos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 2rem;    
+}
+
+.contactos__titulo{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #cfca92;
+}
+
+.contactos__contenido__redes{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contactos__contenido__redes__red{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.contactos__contenido__redes__red h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #cfca92;
+}
+
+
+footer{
+    background-color: #fff;
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    color: #6f6c49;
+}
 
 @media (min-width: 700px){
     .productos__card{
@@ -257,6 +354,15 @@ video{
     .productos__card{
         width: 20%;
     }
+
+    /*Nosotros*/
+    .nosotros__presentacion__titulo{
+        top: 18rem;
+        font-size: 3rem;
+    }
+
+
+    
 }
 
 

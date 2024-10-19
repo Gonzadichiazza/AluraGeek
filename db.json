@@ -1,13 +1,6 @@
 {
   "articulos": [
     {
-      "id": "1",
-      "nombre": "Chorizo",
-      "precio": 1500,
-      "imagen": "./assets/images.jpeg",
-      "activo": true
-    },
-    {
       "id": "3",
       "nombre": "Salame",
       "precio": 1400,

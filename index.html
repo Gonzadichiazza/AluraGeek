@@ -5,92 +5,229 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=+, initial-scale=1.0" />
     <title>Del campo Chacinados</title>
-    <link rel="stylesheet" href="./css/flex.css"/>
+    <link rel="stylesheet" href="./css/flex.css" />
     <link rel="stylesheet" href="./css/estilos.css" />
     <link rel="stylesheet" href="./css/reset.css" />
-  
-    
   </head>
   <body>
     <header class="menu">
-
       <a href="#">
-        <img src="./assets/del_campo-removebg-preview.png" class="menu__img" alt="Logotipo empresa">
+        <img
+          src="./assets/del_campo-removebg-preview.png"
+          class="menu__img"
+          alt="Logotipo empresa"
+        />
       </a>
 
-      <input type="checkbox" id="check">     
+      <input type="checkbox" id="check" />
       <label for="check" class="menu__telefono">
-        <i class="fa-solid fa-bars fa-flip-horizontal fa-2xl menu__telefono__icono" style="color: #6F6C49;"></i>
+        <i
+          class="fa-solid fa-bars fa-flip-horizontal fa-2xl menu__telefono__icono"
+          style="color: #6f6c49"
+        ></i>
       </label>
 
       <ul class="lista">
-        <li class="lista__item linea"><a href="#productos">Nuestros productos</a></li>
-        <li class="lista__item linea"><a href="">Sobre nosotros</a></li>
-        <li class="lista__item linea"><a href="">Contactanos</a></li>
-        <li class="lista__item linea"><a href="./pages/agregarProductos.html">Agregar productos</a></li>
+        <li class="lista__item linea">
+          <a href="#productos">Nuestros productos</a>
+        </li>
+        <li class="lista__item linea"><a href="#nosotros">Sobre nosotros</a></li>
+        <li class="lista__item linea"><a href="#contacto">Contactanos</a></li>
+        <li class="lista__item linea">
+          <a href="./pages/agregarProductos.html">Agregar productos</a>
+        </li>
       </ul>
-
-    
     </header>
     <main>
-        <section class="video">
-          <div class="videos">
-            <article class="videos__seccion">
-              <video class="videos__seccion__video" src="./assets/10838611-hd_3840_2160_30fps.mp4" autoplay loop muted playsinline></video>
-              <div class="videos__seccion__presentacion">
-                <h2 class="videos__seccion__presentacion__titulo">Nuestros productos</h2>
-                <p class="videos__seccion__presentacion__parrafo">En Del Campo Chacinados, estamos comprometidos a ofrecer productos chacinados de la más alta calidad. 
-                  Elaborados artesanalmente con ingredientes naturales y cuidadosamente seleccionados, nuestros chacinados son sinónimo de sabor auténtico y tradición.</p>
-              </div>
-            </article>
-            <article class="videos__seccion">
-              <video class="videos__seccion__video" src="./assets/179207-861403607_small.mp4" autoplay loop muted playsinline></video>
-              <div class="videos__seccion__presentacion">
-                <h2 class="videos__seccion__presentacion__titulo">Calidad Superior</h2>
-                <p class="videos__seccion__presentacion__parrafo">Nuestros productos son el resultado de una combinación perfecta entre tradición y innovación. 
-                  Utilizamos las mejores materias primas y seguimos procesos estrictos de calidad para garantizar que cada bocado sea una experiencia inolvidable.</p>
-              </div>
-            </article>
-            <article class="videos__seccion">
-              <video class="videos__seccion__video" src="./assets/3769204-hd_1920_1080_25fps.mp4" autoplay loop muted playsinline></video>
-              <div class="videos__seccion__presentacion">
-                <h2 class="videos__seccion__presentacion__titulo">Variedad y sabor</h2>
-                <p class="videos__seccion__presentacion__parrafo">Desde chorizos y salame, hasta hamburguesas y lomos embuchados, nuestra gama de productos está pensada para satisfacer todos los paladares. 
-                  Cada uno de nuestros chacinados es curado y ahumado lentamente para asegurar un sabor robusto y auténtico.</p>
-              </div>
-            </article>
-          </div>
-          
-            <button id="right" class="botones videos__video--next"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i></button>
-            <button id="left" class="botones videos__video--prev"><i class="fa-solid fa-arrow-right fa-flip-horizontal fa-2xl" style="color: #ffffff;"></i></button>
-          
-        </section>
-        <section id="productos" class="productos">
-            <h2 class="productos__titulo">Nuestros Productos</h2>
-            <div class="contenedor__productos" data-lista>
-             <article class="productos__card" data-id="1">
-                <div class="productos__modificadores">
-                  <i class="fa-solid fa-pen-to-square fa-2xl productos__card__eliminar" style="color: #FFD43B;" data-editar data-id="1"></i>
-                  <i class="fa-solid fa-circle-xmark fa-2xl productos__card__eliminar" style="color:  #920707;" data-eliminar data-id="1"></i>           
-                </div>
-
-                <img src="./assets/images.jpeg" alt="imagen" class="productos__card__img">
-
-                <div class="productos__card__header">
-                  <h2 class="producto__card__titulo">Chorizos</h2>
-                  <h3 class="producto__card__precio">$1600</h3>
-                </div>
-
-                  
-              </article>
-
-             
+      <section class="video">
+        <div class="videos">
+          <article class="videos__seccion">
+            <video
+              class="videos__seccion__video"
+              src="./assets/10838611-hd_3840_2160_30fps.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+            <div class="videos__seccion__presentacion">
+              <h2 class="videos__seccion__presentacion__titulo">
+                Nuestros productos
+              </h2>
+              <p class="videos__seccion__presentacion__parrafo">
+                En Del Campo Chacinados, estamos comprometidos a ofrecer
+                productos chacinados de la más alta calidad. Elaborados
+                artesanalmente con ingredientes naturales y cuidadosamente
+                seleccionados, nuestros chacinados son sinónimo de sabor
+                auténtico y tradición.
+              </p>
             </div>
-            </section>
+          </article>
+          <article class="videos__seccion">
+            <video
+              class="videos__seccion__video"
+              src="./assets/179207-861403607_small.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+            <div class="videos__seccion__presentacion">
+              <h2 class="videos__seccion__presentacion__titulo">
+                Calidad Superior
+              </h2>
+              <p class="videos__seccion__presentacion__parrafo">
+                Nuestros productos son el resultado de una combinación perfecta
+                entre tradición y innovación. Utilizamos las mejores materias
+                primas y seguimos procesos estrictos de calidad para garantizar
+                que cada bocado sea una experiencia inolvidable.
+              </p>
+            </div>
+          </article>
+          <article class="videos__seccion">
+            <video
+              class="videos__seccion__video"
+              src="./assets/3769204-hd_1920_1080_25fps.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+            <div class="videos__seccion__presentacion">
+              <h2 class="videos__seccion__presentacion__titulo">
+                Variedad y sabor
+              </h2>
+              <p class="videos__seccion__presentacion__parrafo">
+                Desde chorizos y salame, hasta hamburguesas y lomos embuchados,
+                nuestra gama de productos está pensada para satisfacer todos los
+                paladares. Cada uno de nuestros chacinados es curado y ahumado
+                lentamente para asegurar un sabor robusto y auténtico.
+              </p>
+            </div>
+          </article>
+        </div>
 
+        <button id="right" class="botones videos__video--next">
+          <i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff"></i>
+        </button>
+        <button id="left" class="botones videos__video--prev">
+          <i
+            class="fa-solid fa-arrow-right fa-flip-horizontal fa-2xl"
+            style="color: #ffffff"
+          ></i>
+        </button>
+      </section>
+      <section id="productos" class="productos">
+        <h2 class="productos__titulo">Nuestros Productos</h2>
+        <div class="contenedor__productos" data-lista>
+          <article class="productos__card" data-id="1">
+            <div class="productos__modificadores">
+              <i
+                class="fa-solid fa-pen-to-square fa-2xl productos__card__eliminar"
+                style="color: #ffd43b"
+                data-editar
+                data-id="1"
+              ></i>
+              <i
+                class="fa-solid fa-circle-xmark fa-2xl productos__card__eliminar"
+                style="color: #920707"
+                data-eliminar
+                data-id="1"
+              ></i>
+            </div>
+
+            <img
+              src="./assets/images.jpeg"
+              alt="imagen"
+              class="productos__card__img"
+            />
+
+            <div class="productos__card__header">
+              <h2 class="producto__card__titulo">Chorizos</h2>
+              <h3 class="producto__card__precio">$1600</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="nosotros" class="nosotros">
+        <div class="nosotros__presentacion">
+          <h2 class="nosotros__presentacion__titulo">Sobre Nosotros</h2>
+          <img
+            class="nosotros__presentacion__imagen"
+            src="./assets/chacinados.jpg"
+            alt="imagen de chacinados"
+          />
+        </div>
+        <div class="nosotros__contenedor">
+          <p class="nosotros__contenedor__descripcion">
+            En Del Campo Chacinados, somos una empresa pequeña y familiar con un
+            compromiso profundo con la calidad y la tradición. <br />
+            Nos dedicamos a la elaboración artesanal de productos chacinados,
+            utilizando únicamente ingredientes naturales y cuidadosamente
+            seleccionados. Nuestra pasión por la charcutería se refleja en cada
+            uno de nuestros productos, desde los clásicos chorizos y salames
+            hasta innovadoras hamburguesas y lomos embuchados.
+          </p>
+          <p class="nosotros__contenedor__descripcion">
+            Cada pieza es curada y ahumada lentamente para asegurar un sabor
+            robusto y auténtico. Con años de experiencia en el sector, nuestra
+            familia se enorgullece de mantener vivas las técnicas tradicionales
+            de nuestros antepasados, adaptándolas a los estándares de calidad
+            más exigentes de hoy en día. Nuestra misión es ofrecer productos que
+            no solo alimenten, sino que también evoquen recuerdos y creen nuevas
+            tradiciones en cada hogar. En Del Campo Chacinados, no solo
+            fabricamos alimentos; creamos experiencias gastronómicas que
+            celebran la riqueza de nuestra herencia culinaria.
+          </p>
+        </div>
+      </section>
+
+      <section id="contacto" class="contactos">
+        <h2 class="contactos__titulo">CONTACTANOS</h2>
+        <div class="contactos__contenido">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.252052649494!2d-
+            60.67745292453284!3d-32.94435417359416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab5878b888df%3A0x2398b578e4b3b561!2s
+            Constituci%C3%B3n%201150%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1729315401492!5m2!1ses!2sar"
+            width="500"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="contactanos__presentacion__mapa"
+          ></iframe>
+          <div class="contactos__contenido__redes">
+            
+            <figure class="contactos__contenido__redes__red">
+              <a href="#"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #cfca92;"></i></a>
+              <figcaption><h3>WhatsApp</h3></figcaption>
+            </figure>
+            <figure class="contactos__contenido__redes__red">
+              <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #cfca92;"></i></a>
+              <figcaption><h3>Instagram</h3></figcaption>
+            </figure>
+            <figure class="contactos__contenido__redes__red">
+              <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #cfca92;"></i></a>
+              <figcaption><h3>Facebook</h3></figcaption>
+            </figure>
+            <figure class="contactos__contenido__redes__red">
+              <a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #cfca92;"></i></a>
+              <figcaption><h3>LinkedIn</h3></figcaption>
+            </figure>
+          
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
-    <script src="https://kit.fontawesome.com/3fd9c49f06.js" crossorigin="anonymous"></script>
+    <footer>
+      <h2>Creado por Gonzalo Dichiazza</h2>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/3fd9c49f06.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/mostrarProductos.js"></script>
     <script src="js/index.js"></script>
     <script src="js/eliminarProductos.js" type="module"></script>
