@@ -21,8 +21,7 @@ async function editar (e){
 function volverIndex(e){
     
     e.preventDefault()
-    window.location.href="/index.html";
-    console.log("oprimienddo");
+    window.location.href="../index.html";
 }
 volver.addEventListener("click", e => volverIndex(e))
 formulario.addEventListener("submit", e => editar(e))
