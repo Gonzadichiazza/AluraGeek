@@ -1,23 +1,16 @@
 {
   "articulos": [
     {
-      "id": "3",
       "nombre": "Salame",
-      "precio": 1400,
+      "precio": "2000",
       "imagen": "./assets/salame.jpg",
-      "activo": true
+      "id": "3"
     },
     {
       "nombre": "Hamburguesa",
-      "precio": "1889",
+      "precio": "9000",
       "imagen": "./assets/hamburguesa.jpg",
-      "id": "4"
-    },
-    {
-      "nombre": "Asado",
-      "precio": "15000",
-      "imagen": "./assets/asado.jpg",
-      "id": "f08c"
+      "id": "8dcc"
     }
   ]
 }
